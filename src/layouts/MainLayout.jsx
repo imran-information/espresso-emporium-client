@@ -7,7 +7,7 @@ const MainLayout = () => {
     return (
         <div className='font-rancho'>
             <Navbar></Navbar>
-            <div className=" bg-outlet-bg">
+            <div className=" bg-outlet-bg bg-no-repeat">
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>

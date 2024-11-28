@@ -15,6 +15,8 @@ export default {
         'footer-bg': "url('/src/assets/images/more/13.jpg')",
         'footer-bg-2': "url('/src/assets/images/more/24.jpg')",
         'outlet-bg': "url('/src/assets/images/more/11.png')",
+        'popular-bg': "url('/src/assets/images/more/4.png')",
+        'popular-bg2': "url('/src/assets/images/more/5.png')",
 
       }
     },
