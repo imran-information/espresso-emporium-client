@@ -14,6 +14,7 @@ export default {
         'banner-bg': "url('/src/assets/images/more/3.png')",
         'footer-bg': "url('/src/assets/images/more/13.jpg')",
         'footer-bg-2': "url('/src/assets/images/more/24.jpg')",
+        'outlet-bg': "url('/src/assets/images/more/11.png')",
 
       }
     },

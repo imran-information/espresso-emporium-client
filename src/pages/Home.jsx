@@ -1,18 +1,21 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 import Rectangle from '../components/Rectangle';
 import PopularProducts from '../components/PopularProducts';
 import FollowUs from '../components/FollowUs';
+import { useLoaderData } from 'react-router-dom';
 
 
 const Home = () => {
+    const coffees = useLoaderData()
+
+
     return (
         <div>
-            <Navbar></Navbar>
+
             <Banner></Banner>
             <Rectangle></Rectangle>
-            <PopularProducts></PopularProducts>
+            <PopularProducts coffees={coffees}></PopularProducts>
             <FollowUs></FollowUs>
         </div>
     );

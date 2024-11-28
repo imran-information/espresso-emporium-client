@@ -1,11 +1,15 @@
 import React from 'react';
-import Home from '../pages/Home';
 import Footer from '../components/Footer';
+import { Outlet } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 const MainLayout = () => {
     return (
         <div className='font-rancho'>
-            <Home></Home>
+            <Navbar></Navbar>
+            <div className=" bg-outlet-bg">
+                <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );
