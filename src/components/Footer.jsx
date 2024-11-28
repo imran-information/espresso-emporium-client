@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className=" flex justify-between">
                     <div className="flex-1">
                         <h2 className='text-5xl my-6 font-semibold text-[#331A15]'>Espresso Emporium</h2>
-                        <p className='text-2xl'>Always ready to be your friend. Come & Contact with us to share your memorable moments, <br /> to share with your best companion.</p>
+                        <p className='text-xl'>Always ready to be your friend. Come & Contact with us to share your memorable moments, <br /> to share with your best companion.</p>
                         <div className="flex my-8">
                             <a>
                                 <svg
@@ -46,10 +46,10 @@ const Footer = () => {
                             </a>
                         </div>
                         <div >
-                            <h2 className='text-5xl  font-semibold text-[#331A15] mb-8'>Get in Touch</h2>
-                            <p>+88 01533 333 333</p>
-                            <p>info@gmail.com</p>
-                            <p>72, Wall street, King Road, Dhaka</p>
+                            <h2 className='text-5xl  font-semibold text-[#331A15] mb-6'>Get in Touch</h2>
+                            <p className='text-lg my-1'>+88 01533 333 333</p>
+                            <p className='text-lg my-1'>info@gmail.com</p>
+                            <p className='text-lg my-1'>72, Wall street, King Road, Dhaka</p>
                         </div>
                     </div>
 
@@ -83,7 +83,7 @@ const Footer = () => {
                         </label>
                         <textarea className="textarea textarea-bordered h-32 w-full" placeholder="Message"></textarea>
 
-                        <button className=" py-1 px-5 my-5 text-[#331A15]  text-lg border-2 border-[#331A15] rounded-full">Send Message </button>
+                        <button className=" py-1 px-5 my-5 text-[#331A15]  text-lg border-2 border-[#331A15] rounded-full mb-28">Send Message </button>
                     </div>
                 </div>
             </div>
