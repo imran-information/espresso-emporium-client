@@ -17,7 +17,7 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('https://espresso-emporium-server-ruby.vercel.app/coffees')
+                loader: () => fetch('https://espresso-emporium-server-henna.vercel.app/coffees')
             },
             {
                 path: '/addNewCoffee',
@@ -26,12 +26,12 @@ const router = createBrowserRouter([
             {
                 path: '/view-coffee/:id',
                 element: <ViewCoffee></ViewCoffee>,
-                loader: ({ params }) => fetch(`https://espresso-emporium-server-ruby.vercel.app/coffees/${params.id}`)
+                loader: ({ params }) => fetch(`https://espresso-emporium-server-henna.vercel.app/coffees/${params.id}`)
             },
             {
                 path: '/update-coffee/:id',
                 element: <UpdateCoffee></UpdateCoffee>,
-                loader: ({ params }) => fetch(`https://espresso-emporium-server-ruby.vercel.app/coffees/${params.id}`)
+                loader: ({ params }) => fetch(`https://espresso-emporium-server-henna.vercel.app/coffees/${params.id}`)
             },
             {
                 path: '*',
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
             {
                 path: '/users',
                 element: <Users></Users>,
-                loader: () => fetch('https://espresso-emporium-server-ruby.vercel.app/users')
+                loader: () => fetch('https://espresso-emporium-server-henna.vercel.app/users')
             }
         ]
     }

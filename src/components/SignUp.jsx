@@ -23,7 +23,7 @@ const SignUp = () => {
                     email,
                     creationTime
                 }
-                fetch('https://espresso-emporium-server-ruby.vercel.app/users', {
+                fetch('https://espresso-emporium-server-henna.vercel.app/users', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -76,7 +76,7 @@ const SignUp = () => {
                         <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary">SignUP</button>
+                        <button className="btn btn-primary">SignUP or Register</button>
                     </div>
                 </form>
 
