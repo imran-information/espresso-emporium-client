@@ -1,15 +1,27 @@
 import React, { useContext } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const SignIn = () => {
     const { signInUser } = useContext(AuthContext)
+    const navigate = useNavigate()
     const handleSubmit = (e) => {
         e.preventDefault()
+        const form = e.target;
         const email = e.target.email.value
         const password = e.target.password.value
-        signInUser(email, password);
-
+        signInUser(email, password)
+            .then(res => {
+                console.log(res.user);
+                Swal.fire({
+                    title: "Successfully!",
+                    text: "SignIn successfully!",
+                    icon: "success"
+                });
+                form.reset()
+                navigate('/')
+            })
     }
     return (
         <div className="card bg-base-100 w-full max-w-2xl h-96 shrink-0 shadow-2xl mt-44 mb-20 mx-auto">
