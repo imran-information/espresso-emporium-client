@@ -5,7 +5,8 @@ import logo from '../assets/images/more/logo1.png'
 const Navbar = () => {
     const links = <>
         <li className='text-lg'><NavLink to='/'>Home</NavLink></li>
-        <li className='text-lg'><NavLink to='/addNewCoffee'>Add Coffee</NavLink></li>
+        <li className='text-lg'><NavLink to='/addNewCoffee'>Add Coffee</NavLink></li> 
+        <li className='text-lg'><NavLink to='/users'>Users</NavLink></li> 
     </>
 
     return (
@@ -40,7 +41,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Login</a>
+                <NavLink to='/signin' className="btn">Login</NavLink >
             </div>
         </div>
     );

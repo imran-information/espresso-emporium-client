@@ -5,6 +5,9 @@ import AddNewCoffee from "../pages/AddNewCoffee";
 import ViewCoffee from "../components/ViewCoffee";
 import UpdateCoffee from "../components/UpdateCoffee";
 import ErrorPage from "../components/ErrorPage";
+import SignIn from "../components/SignIn";
+import SignUp from "../components/SignUp";
+import Users from "../components/Users";
 
 const router = createBrowserRouter([
     {
@@ -33,6 +36,19 @@ const router = createBrowserRouter([
             {
                 path: '*',
                 element: <ErrorPage></ErrorPage>
+            },
+            {
+                path: '/signin',
+                element: <SignIn></SignIn>
+            },
+            {
+                path: '/signup',
+                element: <SignUp></SignUp>
+            },
+            {
+                path: '/users',
+                element: <Users></Users>,
+                loader: () => fetch('http://localhost:5000/users')
             }
         ]
     }
